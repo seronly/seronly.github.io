@@ -1,0 +1,80 @@
+$cyan: rgb(22, 160, 133);
+$color: $cyan;
+$blue-shadow: #122766;
+
+
+button {
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#quote-box{
+    width: 450px;
+    padding: 40px;
+    color: $color;
+    background-color: #efefef;
+    box-shadow: inset 0 0 15px 5px rgba(0,0,0,1);
+    border-radius: 10px;
+}
+.quote-text {
+    font-size: 28px;
+}
+.quote-author {
+    width: 100%;
+    text-align: right;
+    color: $color;
+}
+.quote-author p:before {
+  content: "– ";
+  font-size: 18px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: $color;
+  border-radius: 50%;
+  color: white;
+}
+#tweet-quote {
+  font-size: 1.8em;
+}
+
+
+@media (max-width: 550px) { 
+    #quote-box{
+        margin: 0 10px;
+        width: 300px;
+    }
+    .quote-text{
+        font-size: 18px;
+    }
+    .quote-author{
+        font-size: 14px;
+    }
+    .button{
+        width: 45px;
+        height: 45px;
+        font-size: 12px;
+    }
+    #tweet-quote {
+        font-size: 1.3em;
+    }
+    
+
+
+}
